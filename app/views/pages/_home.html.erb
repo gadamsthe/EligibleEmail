@@ -2,36 +2,51 @@
 	<div class="hero-unit">
 	<div class="row">
 	  <div class="span8">
-	  	<h1>Entrepreneurs<br>
-	  		Designers &<br>
-	  		Developers</h1>
-	  </div>
-	</div>
-
-	<br>
-	<p>
-		<strong>What Motivates You?&nbsp;</strong><%= link_to "Share Your Inspiration", new_pin_path %> & Motivate Creative, Talented People Like Yourself.
+	  <h2>Welcome!</h2><h4>As our newest patient, we'd like you to fill out this short form to get things started.</h4>
 	</div>
 
 <% else %>
 
 <div class="hero-unit">
 	<div class="row">
-	  <div class="span8">
-	  	<h1>Entrepreneurs<br>
-	  		Designers &<br>
-	  		Developers</h1>
+	  <div class="span8" align="center">
+	  	<h1>Welcome!</h1><p>As our newest patient, we'll need some basic information from you to get started.</p>
 	  </div>
 	</div>
-	<br>
-	<p>
-		<strong>What Motivates You?&nbsp;</strong><%= link_to "Share Your Inspiration", new_user_registration_path %> & Motivate Creative, Talented People Like Yourself.
 
-		<!-- </p>
-		<%= link_to "Sign Up", new_user_registration_path, class: "btn btn-inverse btn-large" %> -->
-		
-	</p>
+<form>
+  <table>
+    <tr>
+      <td align="right">First Name:</td>
+      <td align="left"><input type="text" name="first" /></td>
+    </tr>
+    <tr>
+      <td align="right">Last Name:</td>
+      <td align="left"><input type="text" name="last" /></td>
+    </tr>
+    <tr>
+      <td align="right">Birthday</td>
+      <td align="left"><input type="text" name="email" /></td>
+    </tr>
+    <tr>
+      <td align="right">Insurance Provider</td>
+      <td align="left"><input type="text" name="first" /></td>
+    </tr>
+    <tr>
+      <td align="right">Policy Number</td>
+      <td align="left"><input type="text" name="first" /></td>
+    </tr>
+    <br>
+  	<tr>
+  	<td align="right"></td>
+  	<td align="left"><button type="submit" class="btn btn-primary">
+  		<i class="icon-user icon-white"></i> Submit!
+	</button></td>
+</table>
+</form>
+
 </div>
+
 	<% end %>
 
 
